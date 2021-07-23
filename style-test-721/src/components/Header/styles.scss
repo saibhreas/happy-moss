@@ -1,5 +1,19 @@
 .header {
   height: 6.5rem;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+
+  .wrap {
+    position: releative;
+    max-width: 1450px;
+    margin: 0 auto;
+
+    .logo {
+      position: absolute;
+      top: 8%; left: 10px;
+      -weblit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+  }
   
 }
