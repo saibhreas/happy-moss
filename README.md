@@ -14,6 +14,8 @@ npx create-react-app style-test-721
 review .gitignore
 review JSON
 add libraries now
+  npm i node-sass
+  
 
 
 npm start
