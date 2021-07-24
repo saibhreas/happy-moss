@@ -1,5 +1,5 @@
 import React from "react";
-import ShopMen from "./../../assets/shopMens.jpg";
+import ShopMen from "./../../assets/shopMens.png";
 
 import ShopWomen from "./../../assets/shopWomens.jpg";
 
@@ -18,6 +18,7 @@ const Directory = (props) => {
         </div>
 
         <div
+          className="item"
           style={{
             backgroundImage: `url(${ShopMen})`,
           }}
