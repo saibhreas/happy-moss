@@ -10,10 +10,10 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Homepage />
-        
-      
-      <h3>this should be below the header </h3>
+      <div className="main">
+        <Homepage />
+        <h3>this is not on the home page </h3>
+      </div> 
     </div>
   );
 }
