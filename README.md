@@ -24,7 +24,7 @@ git
   * added 2 branches develop1 and develop2
 
 
-
+Follwoing How to build an eCommerce Website using React Redux, GraphQL, Firebase #1 – Basic setup and homepage  building out Home page
 
 
 
