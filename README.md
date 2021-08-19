@@ -36,3 +36,4 @@ Follwoing How to build an eCommerce Website using React Redux, GraphQL, Firebase
   having build issues, cannot get develop2 most up to date branch to merge with other branches.  working on the problem 8/18
   want to move repo anyway.  so breaking down an putting on a different physical drive on local system
   
+Cloned to different drive,  loaded nodes and running.
