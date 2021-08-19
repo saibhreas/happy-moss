@@ -1,3 +1,11 @@
 {
-  "git.ignoreLimitWarning": true
+  "git.ignoreLimitWarning": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "better-comments.highlightPlainText": true,
+  "bracketPairColorizer.excludedLanguages": [],
+  "html.format.endWithNewline": true,
+  "html.format.indentInnerHtml": true,
+  "html.format.maxPreserveNewLines": 2
 }
