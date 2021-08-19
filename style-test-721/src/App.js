@@ -1,15 +1,19 @@
+//Front end only imports
 import React from 'react';
 import Header from './components/Header'
+import Homepage from './pages/Homepage'
+
 import './default.scss';
 
 
 function App() {
   return (
     <div className="App">
-      <Header>
-        
-      </Header> 
-      <h3>this should be below the header </h3>
+      <Header />
+      <div className="main">
+        <Homepage />
+        <h3>this is not on the home page </h3>
+      </div> 
     </div>
   );
 }
