@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intro To ViewBox attributes and behaviors</title>
+  </head>
+  <body>
+    <h2>View Box same size as svg && begins @ upper left 0,0 of screen</h2>
+    <svg width="400" height="100" ViewBox="0 400 100">
+      <rect width="400" height="100" fill="burlywood" />
+      <circle cx="200" cy="50" r="75" fill="crimson" />
+      <rect width="100" height="50" x="150" y="25" fill="teal" />
+    </svg>
+    <br />
+    <h3>View Box @ 0,0 but only looking at 200x50 px of it</h3>
+    <p>Gives the effect of zooming in on upper left corner</p>
+    <svg width="400" height="100" ViewBox="0 0 200 50">
+      <rect width="400" height="100" fill="burlywood" />
+      <circle cx="200" cy="50" r="75" fill="crimson" />
+      <rect width="100" height="50" x="150" y="25" fill="teal" />
+    </svg>
+    <br />
+    <h3>now oriented at 100x, 25y and only looking at (zoomed into) 200x50</h3>
+    <svg width="400" height="100" ViewBox="100 25 200 50">
+      <rect width="400" height="100" fill="burlywood" />
+      <circle cx="200" cy="50" r="75" fill="crimson" />
+      <rect width="100" height="50" x="150" y="25" fill="teal" />
+    </svg>
+    <br />
+    <h3> Moved again, can be useful for short aninmation like mouse over effects</h3>
+    <svg width="400" height="100" ViewBox="300 75 100 75">
+      <rect width="400" height="100" fill="burlywood" />
+      <circle cx="200" cy="50" r="75" fill="crimson" />
+      <rect width="100" height="50" x="150" y="25" fill="teal" />
+    </svg>
+    <br />
+  </body>
+</html>
