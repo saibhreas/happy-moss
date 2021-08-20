@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .lower{
+      fill:teal;
+    };
+    
+  
+  </style>
+  <title>Intro to Paths && SVG</title>
+</head>
+<body>
+  <h3><em><strong>NOTE</em></strong>   Style is internal to document only for brevity of these exercises</h3>
+  <h2> Path --d begins the orgin of the shape</h2>
+  <p>
+    Typically not doen by hand, but rendered in program like Illustrator 
+  </p>
+  <p>
+    If the element begins with a captiol letter L means start the line absolute.  If the element begins with a lowercase then it is a relative path.  Insted of going to position 150 150 it would be 150x150 relative to the previous point/element</p>
+  <p> 
+    Rectangle made by absolute pathing: <br>
+    path d='M 10 10 L 150 10 L 150 150 L 10 150'
+  </p>
+
+  <svg width='300 height='300'>
+    <path d='M 10 10 L 150 10 L 150 150 L 10 150' />
+  </svg>
+  <svg width='300 height='300'>
+    <path d='m 10 10 L 150 10 l 150 150 l 10 150' />
+  </svg>
+  <p>H is move horizonally  to absolute amount, V move vertically</p>
+  <svg width='300 height='300'>
+     <path d='m 10 10 H 150  V 150  L 10 150' />
+   </svg>
+   <br>
+   <br>
+   <h2>
+     Now introducing the use of class and how it affects groups
+   </h2>
+   <p><em>From Mozilla https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/class</em></p>
+   <p> Class assignemnts are used for two purposes.</p>
+   <ul>
+     <li>
+       CSS Style sheet -- assigns style information
+     </li>
+     <li>
+       Use by the broswer (Animation)
+     </li>
+     <p>Multiple classes must be seperated by spaces when defining the same element</p>
+   </ul>
+ <svg width='300 height='300'>
+    <path class='lower' d='m 10 10 L 150 10 l 150 150 l 10 150' />
+  </svg>
+</body>
+</html>
