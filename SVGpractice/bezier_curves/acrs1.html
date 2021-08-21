@@ -93,5 +93,40 @@
       />
       <path d=" M 50 100 A 50 50 0 1 1 110 30" stroke="black" fill="skyblue" />
     </svg>
+    <h3>
+      Rendering of shapes (fill) is in realtionship to where they occur in the
+      path. The first elements in the path are at a depth level of 0 and each
+      subsuquent path will overwrite community space.
+    </h3>
+    <svg width="300" height="300">
+      <path
+        d="M 50 100
+        A 50 50 0 1 1 100 30
+        Z"
+        stroke="black"
+        fill="orange"
+      />
+      <path
+        d="M 50 100
+        A 50 50 0 1 0 100 30
+        Z"
+        stroke="black"
+        fill="teal"
+      />
+      <path
+        d="M 50 100 
+      A 50 50 0 0 0 100 30
+      Z"
+        stroke="black"
+        fill="indianred"
+      />
+      <path
+        d="M 50 100
+      A50 50 0 0 1 100 30
+      Z"
+        stroke="yellow"
+        fill="teal"
+      />
+    </svg>
   </body>
 </html>
