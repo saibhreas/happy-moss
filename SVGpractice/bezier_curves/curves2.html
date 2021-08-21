@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More with Bezier Curves</title>
+  </head>
+  <body>
+    <h3>Combining curves</h3>
+    <svg width="300" height="200">
+      <g>
+        <path
+          d="M 10 85  C 50 160,  100 160, 150 85"
+          fill="transparent"
+          stroke="black"
+          stroke-weight="4"
+        />
+        <path
+          d="M 150 85  C 190 10,  230 10, 270 85"
+          fill="orange"
+          stroke="Blue"
+          stroke-weight="4"
+        />
+      </g>
+    </svg>
+    <h3>The power of PATH command</h3>
+    <p>
+      You can concatenate the curve sections into one single path command<br />
+      path d="M 10 85 C 50 160, 100 160, 150 85 C 190 10, 230 10, 270
+      85"fill="transparent" stroke="black" stroke-weight="4" />
+    </p>
+    <svg width="300" height="200">
+      <g>
+        <path
+          d="M 10 85 C 50 160, 100 160, 150 85  C 190 10, 230 10,
+        270 85"
+          fill="skyblue"
+          stroke="black"
+          stroke-weight="4"
+        />
+      </g>
+    </svg>
+    <p>
+      Using the S command (String together) will continue the curve, use x1 y1 xy (where xy are
+      the end points).
+    </p>
+    <svg width="300" height="200">
+      <g>
+        <path
+          d="M 10 85 C 50 160, 100 160, 150 85  S 230 10,  270,85"
+          fill="skyblue"
+          stroke="black"
+          stroke-weight="4"
+        />
+      </g>
+    </svg>
+  </body>
+</html>
