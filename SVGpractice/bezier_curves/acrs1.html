@@ -13,14 +13,85 @@
       within the radius of the circle
     </p>
     <p>
+      Because ther are two elipses with spceified radius (rx ry which alone will
+      render 4 possible answers).
+    </p>
+    <p>
       <strong>A</strong><strong> a </strong> use rx ry x-axis rotation<br />
       large-arc-flag indicates wherether we are using smaller or larger arc
       <br />
       sweep-flag clockwise or counterclockwise <br />
       xy end points
     </p>
-    <svg width="300" height="300">
-      <path d="M 0 100 L 0 100 100 100 A 10 20 0 0 0 200 100" />
+    <p>
+      A 10 20 0 0 <em>0</em> 200 100 Sweep flag: 0 = arc is drawn
+      counterclockewise from left to right
+    </p>
+    <svg width="300" height="150">
+      <path
+        d="M 0 25 L 0 25 100 25 A 10 20 0 0 0 200 25"
+        fill="transparent"
+        stroke="black"
+      />
+    </svg>
+
+    <p>
+      A 10 20 0 0 <em>1</em> 200 100 Sweep flag: 0 = arc is drawn clockewise
+      from left to right
+    </p>
+    <svg width="300" height="150">
+      <path
+        d="M 0 100 L 0 100 100 100 A 10 20 0 0 1 200 100"
+        fill="transparent"
+        stroke="black"
+      />
+    </svg>
+    <p>
+      A 10 20 <em>45</em> 0 1 200 100 X axis rotation: 45 looks like 45
+      turn/depth
+    </p>
+    <svg width="300" height="150">
+      <path
+        d="M 0 100 L 0 100 100 100 A 10 20 45 0 1 200 100"
+        fill="transparent"
+        stroke="black"
+      />
+    </svg>
+    <svg width="300" height="150">
+      <path
+        d="M 0 100 L 0 100 100 100 A 10 20 -60 0 1 200 100"
+        fill="transparent"
+        stroke="black"
+      />
+    </svg>
+    <h3>The Large Arc flag examples</h3>
+    <p>
+      Large-Arc-flag = 1 means the arc will be drawn on whatever side is larger
+      based on the line
+    </p>
+    <svg width="300" height="200">
+      <path
+        d=" M 50 100 A 50 50 0 1 0 110 30"
+        stroke="black"
+        fill="forestgreen"
+      />
+      <path d=" M 50 100 A 50 50 0 0 0 110 30" stroke="black" fill="skyblue" />
+    </svg>
+    <svg width="300" height="200">
+      <path
+        d=" M 50 100 A 50 50 0 1 0 110 30"
+        stroke="black"
+        fill="forestgreen"
+      />
+      <path d=" M 50 100 A 50 50 0 0 1 110 30" stroke="black" fill="skyblue" />
+    </svg>
+    <svg width="300" height="200">
+      <path
+        d=" M 50 100 A 50 50 0 0 0 110 30"
+        stroke="black"
+        fill="forestgreen"
+      />
+      <path d=" M 50 100 A 50 50 0 1 1 110 30" stroke="black" fill="skyblue" />
     </svg>
   </body>
 </html>
