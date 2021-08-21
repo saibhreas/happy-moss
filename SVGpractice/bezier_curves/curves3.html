@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More Quadratic Curves</title>
+  </head>
+  <body>
+    <svg width="200" height="300">
+      <path
+        d="M 100 0 C 25 25, 25 100, 100 100, S 175 200, 100 200, S 25 275
+      100 300"
+      />
+    </svg>
+    <h2>Quadratic Curves:</h2>
+    <p>
+      Use Q for command, and only need one control point, it begins where you
+      left off
+    </p>
+    <p>
+      Q x1 y1, xy || q dx1 dxy, dx dy <br />
+      co-ordinate delta for <strong>q</strong>are relative to the previous point
+    </p>
+    <svg width="300" height="200">
+      <path d="M 0 150  Q 75 0, 150 150 Q 200 0 , 300 150" />
+    </svg>
+    <p>
+      Using T you assume to coninue on same path(curve), so it becomes a
+      reflection
+    </p>
+    <svg width="300" height="200">
+      <path d="M 0 100  Q 75 0, 150 100 T 300 100" />
+    </svg>
+    <h2>Intro to Arc</h2>
+    <p>
+      Arcs draw sections of elippses that are able to connect and 2 points
+      within the radius of the circle
+    </p>
+    <p>
+      <strong>A</strong><strong> a </strong> use rx ry x-axis rotation<br />
+      large-arc-flag indicates wherether we are using smaller or larger arc
+      <br />
+      sweep-flag clockwise or counterclockwise <br />
+      xy end points
+    </p>
+  </body>
+</html>
